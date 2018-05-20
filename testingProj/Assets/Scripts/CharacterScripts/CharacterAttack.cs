@@ -10,6 +10,7 @@ public class CharacterAttack : MonoBehaviour {
 	public LayerMask myLayerMask;
 	private GameObject enemy;
 	private int shovelDamage = 10;
+	public static bool isAttacking;
 
 
 	// Use this for initialization
@@ -29,7 +30,7 @@ public class CharacterAttack : MonoBehaviour {
 	void Attack(){
 		if(Input.GetMouseButtonDown(0)) {
 			rHandAnim.Play("playerRightAttack");
-
+			isAttacking = true;
 			RaycastHit hit;
 			if (Physics.Raycast(charCam.transform.position, charCam.transform.forward, out hit, range, myLayerMask)) {
 				enemy = hit.transform.gameObject;
