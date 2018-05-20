@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4351750559656096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4971859962503978}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4465849429366168}
   - component: {fileID: 137847203745331988}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Object001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4888167810312040}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4221745237215204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4628169591569450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4234259870779010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4588644020108750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4017941738483890}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4370925421521528}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4571437337382886}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4783726831819102}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4477031862043798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,8 @@ GameObject:
   - component: {fileID: 195827858050538068}
   - component: {fileID: 65569347895060490}
   - component: {fileID: 135617912171806164}
-  m_Layer: 0
+  - component: {fileID: 82712472349556946}
+  m_Layer: 10
   m_Name: Shell_Crab_Full
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -238,7 +239,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4695762067169842}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +254,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4608812512201556}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +269,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4121364535960852}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +284,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4141067950916550}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,7 +299,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4887570817666952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +314,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4634369472142184}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +329,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4460946796418710}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +344,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4019213099421770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +359,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4743403776600696}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +374,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4661500835328518}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +389,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4258491545626192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +404,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4508790735202342}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +419,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4149073424104204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +434,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4322784039032906}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +449,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4351161734535344}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +464,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4644285293437900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +479,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4088545546178668}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +494,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4426676222793658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,7 +974,87 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.5, y: 6, z: 8.5}
-  m_Center: {x: 0, y: 3, z: 1}
+  m_Center: {x: 0, y: 3, z: 0.3}
+--- !u!82 &82712472349556946
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386705656929700}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c91f40b2db3650b43afb4e004da8f01d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95864344404393444
 Animator:
   serializedVersion: 3
@@ -1017,7 +1098,8 @@ MonoBehaviour:
   currentHealth: 0
   sinkSpeed: 2.5
   scoreValue: 10
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 655159ea56b21eb4a96b0b74b5a1d738, type: 3}
+  hitClip: {fileID: 8300000, guid: c91f40b2db3650b43afb4e004da8f01d, type: 3}
 --- !u!114 &114824164877702096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1041,8 +1123,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.56
-  m_Center: {x: 0, y: 2.59, z: 2.02}
+  m_Radius: 4
+  m_Center: {x: 0, y: 2.8, z: 1.1}
 --- !u!137 &137847203745331988
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

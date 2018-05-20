@@ -9,6 +9,10 @@ public class CharacterMovement : MonoBehaviour {
 	private float translation;
 	private float straffe;
 
+	public bool canJump = false;
+	private float jumpforce =  20f;
+	private float gravity = -45f;
+
 	// Use this for initialization
 	void Awake () {
 		rb = GetComponent<Rigidbody>();
@@ -18,6 +22,8 @@ public class CharacterMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		Movement ();
+		GroundCheck();
+		Jump();
 	}
 
 	void Movement() {
@@ -32,10 +38,33 @@ public class CharacterMovement : MonoBehaviour {
 		rb.transform.Translate(straffe, 0, translation);
 
 		if (Input.GetKey(KeyCode.LeftShift)) {
-			plrMoveSpd = 25f;
+			plrMoveSpd = 18f;
 			print ("Sprint");
 		} else {
-			plrMoveSpd = 18f;
+			plrMoveSpd = 10f;
+		}
+	}
+
+	void GroundCheck(){
+
+		RaycastHit hit;
+		Ray ray = new Ray(transform.position, - Vector3.up);
+		Physics.Raycast(ray, out hit);
+		float distToGround = hit.distance;
+
+		if(distToGround < 1.2f) {
+			canJump = true;
+		} else {
+			canJump = false;
+		}
+		
+	}
+
+	void Jump() {
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			rb.velocity = new Vector3(0f, jumpforce, 0f);
+		} else {
+			rb.AddForce(0f, gravity, 0f);
 		}
 	}
 		
