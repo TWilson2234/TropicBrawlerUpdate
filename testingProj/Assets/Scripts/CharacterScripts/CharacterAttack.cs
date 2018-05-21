@@ -28,24 +28,34 @@ public class CharacterAttack : MonoBehaviour {
 	}
 
 	void Attack(){
-		if(Input.GetMouseButtonDown(0)) {
+		RaycastHit hit;
+		if(Physics.Raycast(charCam.transform.position, charCam.transform.forward, out hit, range, myLayerMask)) {
+			enemy = hit.transform.gameObject; 
+			print(enemy.name);
+		}
+
+		if(Input.GetMouseButtonDown(1) ) {
 			rHandAnim.Play("playerRightAttack");
 			isAttacking = true;
-			RaycastHit hit;
-			if (Physics.Raycast(charCam.transform.position, charCam.transform.forward, out hit, range, myLayerMask)) {
-				enemy = hit.transform.gameObject;
-				if(enemy != null && enemy.gameObject.tag == "Enemy") {
-					print("Enemy hit");
-					enemyDamage();
-				}
+//			RaycastHit hit;
+//			if (Physics.Raycast(charCam.transform.position, charCam.transform.forward, out hit, range, myLayerMask)) {
+//				enemy = hit.transform.gameObject;
+			if(enemy != null && enemy.gameObject.tag == "Enemy") {
+				enemyDamage(shovelDamage);
 			}
+//			}
+			isAttacking = false;
+		}
 
-		} 
+		if(Input.GetMouseButtonDown(0)) {
+			isAttacking = true;
+
+		}
 	}
 
-	void enemyDamage() {
+	void enemyDamage(int damage) {
 
-		enemy.GetComponent<EnemyHealth>().TakeDamage(shovelDamage);
+		enemy.GetComponent<EnemyHealth>().TakeDamage(damage);
 
 
 	}

@@ -48,11 +48,11 @@ public class CharacterMovement : MonoBehaviour {
 	void GroundCheck(){
 
 		RaycastHit hit;
-		Ray ray = new Ray(transform.position, - Vector3.up);
+		Ray ray = new Ray(transform.position, -Vector3.up);
 		Physics.Raycast(ray, out hit);
 		float distToGround = hit.distance;
 
-		if(distToGround < 1.2f) {
+		if(distToGround < 1f) {
 			canJump = true;
 		} else {
 			canJump = false;
@@ -61,7 +61,7 @@ public class CharacterMovement : MonoBehaviour {
 	}
 
 	void Jump() {
-		if(Input.GetKeyDown(KeyCode.Space)) {
+		if(Input.GetKeyDown(KeyCode.Space) && canJump == true) {
 			rb.velocity = new Vector3(0f, jumpforce, 0f);
 		} else {
 			rb.AddForce(0f, gravity, 0f);
