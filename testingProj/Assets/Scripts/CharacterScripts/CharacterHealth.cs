@@ -1,42 +1,87 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
-public class CharacterHealth : MonoBehaviour {
 
-	public float healthPoints = 100f;
+public class CharacterHealth : MonoBehaviour
+{
+	public int startingHealth = 100;
+	public int healthPoints;
+	public Slider healthSlider;
+	public Image damageImage;
+	public AudioClip deathClip;
+	public float flashSpeed = 5f;
+	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+
 	public CameraController camCon;
 	public CharacterMovement charMove;
-
 	private Animator charAnim;
 
+	AudioSource playerAudio;
+	bool isDead;
+	bool damaged;
 
-	
 
-	// Use this for initialization
-	void Start () {
-		charMove = GetComponent<CharacterMovement> ();
-		camCon = this.GetComponentInChildren<CameraController>();
-		charAnim = GetComponent<Animator>();
-
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-		CheckHealth ();
-		
+	void Start ()
+	{
+		charAnim = GetComponent <Animator> ();
+		playerAudio = GetComponent <AudioSource> ();
+		charMove = GetComponent <CharacterMovement> ();
+		camCon = this.GetComponentInChildren <CameraController> ();
+		healthPoints = startingHealth;
 	}
 
-	void CheckHealth() {
-		if(healthPoints > 0) {
-			//healthPoints -= 1f;
-			if (healthPoints <= 0) {
-				//camCon.enabled = false; //Comment out to test
-				//charMove.enabled = false; //
-				//charAnim.SetBool("isDead", true); //
-			}
+
+	void Update ()
+	{
+		if(damaged)
+		{
+			damageImage.color = flashColour;
 		}
+		else
+		{
+			damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+		}
+		damaged = false;
 	}
+
+
+	public void TakeDamage (int amount)
+	{
+		damaged = true;
+
+		healthPoints -= amount;
+
+		healthSlider.value = healthPoints;
+
+		// playerAudio.Play ();
+
+		/* if(currentHealth <= 0 && !isDead)
+		{
+			Death ();
+		} */
+	}
+
+
+	/* void Death ()
+	{
+		isDead = true;
+
+		playerShooting.DisableEffects ();
+
+		anim.SetTrigger ("Die");
+
+		playerAudio.clip = deathClip;
+		playerAudio.Play ();
+
+		playerMovement.enabled = false;
+		playerShooting.enabled = false;
+	} 
+
+
+	public void RestartLevel ()
+	{
+		SceneManager.LoadScene (0);
+	} */
 }

@@ -48,7 +48,7 @@ public class EnemyAttack : MonoBehaviour
 
         if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
         {
-            //Attack();
+            Attack();
         }
 
         if (characterHealth.healthPoints <= 0)
@@ -58,7 +58,7 @@ public class EnemyAttack : MonoBehaviour
     }
 
 
-    /* void Attack()
+    void Attack()
     {
         timer = 0f;
 
@@ -66,5 +66,5 @@ public class EnemyAttack : MonoBehaviour
         {
             characterHealth.TakeDamage(attackDamage);
         }
-    } */
+    }
 }
